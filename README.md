@@ -34,4 +34,5 @@ calculates the area of a given closed loop
 ## EdgeDetection:
 uses the functions to find the biggest area in the image and returns it
 
+![My Image](Images/edge_detection.png)
 
