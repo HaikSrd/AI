@@ -1,5 +1,7 @@
 import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
+import matplotlib
+matplotlib.use('TkAgg')
 
 '''
 IMPORTANT:
@@ -185,28 +187,3 @@ def WarpedImage(img, dev, size_kernel, threshold, size = None):
 
             warped[v, u] = img[int(y), int(x)]
     return grayscale(warped)
-
-import matplotlib
-matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
-if __name__ == "__main__":
-    image = plt.imread('Apple.jpg')/255
-    componants = find_components(image,2,5,80)
-    componants_image = np.zeros(image.shape[:2])
-
-    for j in componants:
-        for i in j:
-            componants_image[i[0], i[1]] = 1
-
-
-    sobel = blur(image, 2, 5)
-    plt.subplot(3,1,1)
-    plt.imshow(image)
-    plt.title('Original')
-    plt.subplot(3,1,2)
-    plt.imshow(sobel, cmap = 'gray')
-    plt.title('Grayscale + Blur')
-    plt.subplot(3,2,3)
-    plt.imshow(componants_image, cmap = 'gray')
-    plt.title('Edge Detection')
-    plt.show()
