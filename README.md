@@ -9,7 +9,7 @@ The NN.py file contains a NeuralNetwork class that takes: <br>
 - learning rate <br>
 
 To train a model you must call the `train` function after initiating an instance of the class. <br>
-A pre trained model on the mnist dataset is also in the project folder with an accuracy of 99.81%. <br> <br>
+A pre trained model with 3 hidden layers on the mnist dataset is also in the project folder with an accuracy of 99.81%. <br> <br>
 \* Be sure to save the file as an .npz file so you dont lose the model. (notebook is recommended) <br>
 \* To evaluate new images with a trained model you can use the `forward_pass_hidden` function with some minor and simple tweaks
 
