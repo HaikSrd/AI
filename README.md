@@ -23,6 +23,33 @@ and finds the optimal k for the dataset. <br>
 The input of the train function should be as such: <br>
 [1,3,5,...]
 
+\* The input of the class should be numpy arrays <br>
+
+To predict the value of a feature you can use the `predict` function in the class. Which takes 2 inputs:
+- the list of features
+- k
+
+Below is the output of the algorithm on the iris dataset:
+
+| K Value | Accuracy |
+|--------:|---------:|
+| 1       | 96.00%   |
+| 2       | 94.67%   |
+| 3       | 96.00%   |
+| 4       | 96.00%   |
+| 5       | 96.67%   |
+| 6       | 96.00%   |
+| 7       | 96.67%   |
+| 8       | 96.67%   |
+| 9       | 96.67%   |
+| 10      | 96.67%   |
+| 11      | **97.33%** |
+| 12      | 96.00%   |
+| 13      | 96.67%   |
+| 14      | 97.33%   |
+
+**Best K = 11**
+
 
 
 # Edge detection
