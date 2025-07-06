@@ -50,3 +50,13 @@ class KNearestNeighbors:
             accurecy.append(acc)
         print(f"Best K = {values_of_k[accurecy.index(max(accurecy))]}")
         return values_of_k[accurecy.index(max(accurecy))]
+
+    def predict(self,point,k):
+        distances = []
+        for i in range(self.num_features):
+            distances.append([i, self.distance(self.features[i], point)])
+        distances = sorted(distances, key = lambda x: x[1])[:k]
+        neighbors = []
+        for i in distances:
+          neighbors.append(self.values[i[0]])
+        return max(set(neighbors), key=neighbors.count)
