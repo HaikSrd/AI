@@ -1,3 +1,5 @@
+import numpy as np
+
 class NeuralNetwork:
     def __init__(self, input: list[float], output: list[int], output_size: int, number_of_convolution: int,
                  number_of_hidden: int, neuron_number: list[int], epochs:int,learning_rate = float):
