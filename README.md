@@ -1,5 +1,5 @@
 # Neural Network
-The NN.py file contains a NeuralNetwork class that takes: <br>
+The NN.py file contains a `NeuralNetwork` class that takes: <br>
 - dataset inputs <br>
 - dataset values <br>
 - size of the output <br>
@@ -12,6 +12,18 @@ To train a model you must call the `train` function after initiating an instance
 A pre trained model with 3 hidden layers on the mnist dataset is also in the project folder with an accuracy of 99.81%. <br> <br>
 \* Be sure to save the file as an .npz file so you dont lose the model. (notebook is recommended) <br>
 \* To evaluate new images with a trained model you can use the `forward_pass_hidden` function with some minor and simple tweaks
+
+# Knn (K-Nearest Neighbors)
+The KNN.py file contains a `KNearestNeighbors` class that takes: <br>
+- features
+- labels (values) <br>
+
+Also to find the best k you can use the `train` function in the class that takes a list of k's as input
+and finds the optimal k for the dataset. <br>
+The input of the train function should be as such: <br>
+[1,3,5,...]
+
+
 
 # Edge detection
 the edge_detection.py file conatains some function that do the task of edge detection.
