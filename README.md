@@ -50,6 +50,13 @@ Below is the output of the algorithm on the iris dataset:
 
 **Best K = 11**
 
+# Linear Regression
+Using this algorithm is very simple, you should initiate the class with your dataset and labels and then you can `train` the model with your
+desired learning rate and epoch.
+
+If your data is a linear polynomial you can see the result of the linear regression model alongside the data points using the `plot` function
+![My Image](Images/linear_regression.png)
+
 
 
 # Edge detection
