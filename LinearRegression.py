@@ -29,6 +29,9 @@ class LinearRegression:
         return sum_w0/self.num_data, sum_w1/self.num_data
 
     def train(self, learning_rate = 0.001, epoch = 1000):
+        """
+        The cost function we use for linear regression is: (sum(y_true - w1x - w0)^2)/2
+        """
         for i in range(epoch):
             dw0, dw1 = self.dw(self.w0, self.w1)
             self.w1 -= learning_rate*dw1
