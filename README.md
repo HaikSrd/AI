@@ -13,6 +13,16 @@ A pre trained model with 3 hidden layers on the mnist dataset is also in the pro
 \* Be sure to save the file as an .npz file so you dont lose the model. (notebook is recommended) <br>
 \* To evaluate new images with a trained model you can use the `forward_pass_hidden` function with some minor and simple tweaks
 
+# K-means
+The Kmeans.py file contains a `K_means` class that takes:
+- features
+- number of clusters
+and finds the center of the classes.
+To find the centroids, you should call the `train` function with desired epochs, and save the results in a numpy array. below are some examples
+of the algorithm:
+
+![My Image](Images/2dK-means.png.png)
+
 # Knn (K-Nearest Neighbors)
 The KNN.py file contains a `KNearestNeighbors` class that takes: <br>
 - features
