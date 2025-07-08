@@ -21,7 +21,8 @@ and finds the center of the classes.
 To find the centroids, you should call the `train` function with desired epochs, and save the results in a numpy array. below are some examples
 of the algorithm:
 
-![My Image](Images/2dK-means.png.png)
+<img src="Images/2dK-means.png" width="900">
+<img src="Images/3dK-means.png" width="900">
 
 # Knn (K-Nearest Neighbors)
 The KNN.py file contains a `KNearestNeighbors` class that takes: <br>
