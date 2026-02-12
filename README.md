@@ -13,6 +13,8 @@ A pre trained model with 3 hidden layers on the mnist dataset is also in the pro
 \* Be sure to save the file as an .npz file so you dont lose the model. (notebook is recommended) <br>
 \* To evaluate new images with a trained model you can use the `forward_pass_hidden` function with some minor and simple tweaks
 
+<img src="Images/NeuralNetwork.png" width="900">
+
 # K-means
 The Kmeans.py file contains a `K_means` class that takes:
 - features
